@@ -36,4 +36,3 @@ document.getElementById('btnPos').onclick = reply_click;
 document.getElementById('btnFixado').onclick = reply_click;
 document.getElementById('btnPre').onclick = reply_click;
 
-

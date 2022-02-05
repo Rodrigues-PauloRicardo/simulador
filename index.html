@@ -10,6 +10,7 @@
     
 
     <title>Simulador</title>
+    
 </head>
 <body>
     <Header>
@@ -32,18 +33,15 @@
     </div>    
                                  
         <p>Aporte Inicial</p>
-        <input type="number" name= "aporte" id="aporte"/>
+        <input type="text" size="12" onKeyUp="mascaraMoeda(this, event)" name= "aporte" id="aporte" value=""/>            
         <hr>
         <p>Prazo (em meses)</p>
-        <input type="number" name="prazo" id="prazo"/>
-        <hr>
+        <input type="text" size="12" onKeyUp="mascaraMoeda(this, event)" name= "prazo" id="prazo" value=""/>
+        <hr>        
         <p>IPCA (ao ano)</p>
         <span id="ipca"></span>
         <hr>             
         <input type="button" value="Limpar" class="limpar" onclick="limpar()" >   
-        
-        
-
       
     </div>
     <div class="simular">
@@ -56,10 +54,10 @@
             <input type="button" value="FIXADO"    id="btnFixado"  onclick="fixado()">  
     </div>                                 
             <p>Aporte Mensal</p>
-            <input type="number"name="aporteMes" id="aporteMes" />                  
+            <input type="text" size="12" onKeyUp="mascaraMoeda(this, event)" name= "aporteMes" id="aporteMes" value=""/>                 
             <hr>
             <p>Rentabilidade</p>
-            <input type="number" name="rantabilidade" id="rentabilidade"/>
+            <input type="text" size="12" onKeyUp="mascaraMoeda(this, event)" name= "rantabilidade" id="rantabilidade" value=""/> 
             <hr>
             <p>CDI (ao ano)</p>
             <span id="cdi"></span>
@@ -74,15 +72,14 @@
 
 
 
-        <div>
-
-           
-
+        <div>          
            
    <script src="simulador.js"></script>
    <script src="limpar.js"></script>
    <script src="funcoes.js"></script>
+   <script src="mascaraMoeda.js"></script>
     
 </body>
+
 
 </html>
