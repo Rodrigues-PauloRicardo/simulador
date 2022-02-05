@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+
+    
+
+    <title>Simulador</title>
+</head>
+<body>
+    <Header>
+        <div className="container">
+            <h1>Simulador de Investimentos</h1>           
+        </div>                   
+    </Header>
+
+    <div class="containerPage">
+        
+        <div class="simulaTela">
+        <div class="title">Simulador</div>           
+        <p>Rendimento</p>
+        <form>
+        <label>
+
+    <div class="btns">
+        <input type="button" value="Bruto"        id="btnBr"     onclick="btnBruto()">
+        <input type="button" value="Líquido"      id="btnLiq"    onclick="btnLiquido()">
+    </div>    
+                                 
+        <p>Aporte Inicial</p>
+        <input type="number" name= "aporte" id="aporte"/>
+        <hr>
+        <p>Prazo (em meses)</p>
+        <input type="number" name="prazo" id="prazo"/>
+        <hr>
+        <p>IPCA (ao ano)</p>
+        <span id="ipca"></span>
+        <hr>             
+        <input type="button" value="Limpar" class="limpar" onclick="limpar()" >   
+        
+        
+
+      
+    </div>
+    <div class="simular">
+        <div class="title">Simulador</div>           
+        <p>Tipos de Indexação</p>
+        
+    <div class="btns">
+            <input type="button" value="PRÉ"       id="btnPre"     onclick="pre()" required="true"> 
+            <input type="button" value="PÓS"       id="btnPos"     onclick="pos()">  
+            <input type="button" value="FIXADO"    id="btnFixado"  onclick="fixado()">  
+    </div>                                 
+            <p>Aporte Mensal</p>
+            <input type="number"name="aporteMes" id="aporteMes" />                  
+            <hr>
+            <p>Rentabilidade</p>
+            <input type="number" name="rantabilidade" id="rentabilidade"/>
+            <hr>
+            <p>CDI (ao ano)</p>
+            <span id="cdi"></span>
+            <hr>
+            <input type="button" value="Simular" class="btnSimular" onclick="simular()" > 
+            
+        </label>
+        </form> 
+        
+    </div>
+    <div class="resultado"></div>
+
+
+
+        <div>
+
+           
+
+           
+   <script src="simulador.js"></script>
+   <script src="limpar.js"></script>
+   <script src="funcoes.js"></script>
+    
+</body>
+
+</html>
