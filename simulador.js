@@ -8,3 +8,6 @@ fetch (`http://localhost:3000/indicadores`)
 })
 
 
+function simular(){
+    alert ("ok")
+}

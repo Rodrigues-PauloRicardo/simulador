@@ -17,5 +17,5 @@ String.prototype.reverse = function(){
         x++;
       }
     }
-    campo.value = resultado.reverse();
+    campo.value = "R$ "+ resultado.reverse();
   }
