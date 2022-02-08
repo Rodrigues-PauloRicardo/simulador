@@ -20,23 +20,21 @@
     </Header>
 
     <div class="containerPage">
-        
         <div class="simulaTela">
         <div class="title">Simulador</div>           
         <p>Rendimento</p>
-        <form>
         <label>
-
+            <form action="">        
     <div class="btns">
-        <input type="button" value="Bruto"        id="btnBr"     onclick="btnBruto()">
-        <input type="button" value="Líquido"      id="btnLiq"    onclick="btnLiquido()">
+        <input type="button" value="Bruto"      name="btn"  id="btnBr"     onclick="btnBruto()" checked>
+        <input type="button" value="Líquido"     name="btn" id="btnLiq"    onclick="btnLiquido()">
     </div>    
                                  
         <p>Aporte Inicial</p>
         <input type="text" size="12" onKeyUp="mascaraMoeda(this, event)" name= "aporte" id="aporte" value=""/>            
         <hr>
         <p>Prazo (em meses)</p>
-        <input type="number" name= "prazo" id="prazo"  value=""/>
+        <input type="text" pattern="\d*" maxlength="4" name= "prazo" id="prazo"  value=""/>
         <hr>        
         <p>IPCA (ao ano)</p>
         <span id="ipca"></span>
@@ -49,12 +47,12 @@
         <p>Tipos de Indexação</p>
         
     <div class="btns">
-            <input type="button" value="PRÉ"       id="btnPre"     onclick="pre()" required="true"> 
+            <input type="button" value="PRÉ"       id="btnPre"     onclick="pre()" checked> 
             <input type="button" value="PÓS"       id="btnPos"     onclick="pos()">  
             <input type="button" value="FIXADO"    id="btnFixado"  onclick="fixado()">  
     </div>                                 
             <p>Aporte Mensal</p>
-            <input type="text" size="12" onKeyUp="mascaraMoeda(this, event)" name= "aporteMes" id="aporteMes" value=""/>                 
+            <input type="text"  onKeyUp="mascaraMoeda(this, event)" name= "aporteMes" id="aporteMes" value=""/>              
             <hr>
             <p>Rentabilidade</p>
             <input type="number" name= "rantabilidade" id="rantabilidade" value=""/> 
@@ -62,11 +60,9 @@
             <p>CDI (ao ano)</p>
             <span id="cdi"></span>
             <hr>
-            <input type="button" value="Simular" class="btnSimular" onclick="simular()" > 
+            <input type="button" value="Simular" id="btnSimular" onclick="simular()" > 
             
-        </label>
-        </form> 
-        
+            <form action="">        
     </div>
     <div class="resultado">       
 
@@ -104,20 +100,24 @@
                     <span id="ganhoLiquido"></span>
                 </div>
                 </div>
-            </div> 
-            
-            <div class="grafico">
-                <div class="projecao">
-                    <p>Projeção de Valores</p>
-                </div>
-                <div class="grafico">
-                    gráfico
-                </div>
             </div>
-     
+            
+                <div class="projecao">
+                    Projeção de Valores
+                </div>
 
 
+            
+                <div class="boxGrafico"> 
+                  
+                    <div class="valor">Valor(R$)</div>  
+                               
+                    
+                    <div class="grafico"></div>
 
+
+</div>
+   </div>
         <div>          
            
    <script src="simulador.js"></script>
