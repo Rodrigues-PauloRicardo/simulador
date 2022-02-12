@@ -7,21 +7,23 @@ fetch (`http://localhost:3000/indicadores`)
     document.getElementById('cdi').innerHTML=corpo[1].valor+'%';     
 })
 
-
-
-fetch (`http://localhost:3000/simulacoes`)
-.then(r =>{
-    return r.json()
-})
-.then(body => {
-    console.log(body[3].aliquotaIR);         
-})         
+        
 
 
 
 function simular(){
-   
     document.getElementById("btnSimular").style.background = "orange";
+    
+
+    fetch (`http://localhost:3000/simulacoes`)
+.then(res =>{
+    return res.json()
+})
+.then(body => {
+    console.log(body[3].aliquotaIR);         
+}) 
+   
+   
 
         }
     

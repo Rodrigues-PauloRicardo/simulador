@@ -1,11 +1,7 @@
     function btnLiquido(){
     document.getElementById("btnLiq").style.background = "orange";
     document.getElementById("btnBr").style.background = "transparent";
-    var nome_usuario = 'nome';
 }
-setNome('lucas');
-console.log(nome_usuario);
-
 
 
 function btnBruto(){
