@@ -6,45 +6,26 @@ fetch (`http://localhost:3000/indicadores`)
     document.getElementById('ipca').innerHTML=corpo[0].valor+'%';
     document.getElementById('cdi').innerHTML=corpo[1].valor+'%';     
 })
-
-        
-
-
-
-function simular(){
-    document.getElementById("btnSimular").style.background = "orange";
-    
-
-    fetch (`http://localhost:3000/simulacoes`)
-.then(res =>{
-    return res.json()
-})
-.then(body => {
-    console.log(body[3].aliquotaIR);         
-}) 
-   
-   
-
-        }
-    
-        
-function simular(){
-    document.getElementById("btnSimular").style.background = "orange";
-    
-
-    fetch (`http://localhost:3000/simulacoes`)
-.then(res =>{
-    return res.json()
-})
-.then(body => {
-    console.log(body[3].aliquotaIR);         
-}) 
-   
-   
-
-        }
       
-  
+
+
+function simular(){
+    document.getElementById("btnSimular").style.background = "orange";
+    
+
+    fetch (`http://localhost:3000/simulacoes`)
+.then(res =>{
+    return res.json()
+})
+.then(body => {
+    document.getElementById('ir').innerHTML = (body[3].aliquotaIR + ' %'); 
+
+    
+            
+}) 
+}
+    
+        
 
 
 

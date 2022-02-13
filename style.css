@@ -165,6 +165,10 @@ input[type="number"] {
 .caixaTexto{
     margin-top: 4px;
 }
+#ir{
+    display: flex;
+    justify-content: center;
+}
 
 #finalBruto, #aliquotaIr, #valorPago, #finalLiquido, #totalInvestido, #ganhoLiquido{
     margin-top: 10px;

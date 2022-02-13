@@ -43,9 +43,9 @@
         <p>Tipos de Indexação</p>
         
     <div class="btns">
-            <input type="button" value="PRÉ"       id="btnPre"     onclick="pre()" checked> 
-            <input type="button" value="PÓS"       id="btnPos"     onclick="pos()">  
-            <input type="button" value="FIXADO"    id="btnFixado"  onclick="fixado()">  
+            <button type="button" value="PRÉ"     name="btn2"  id="btnPre"     >PRÉ</button>
+            <button type="button" value="PÓS"     name="btn2"  id="btnPos"     > PÓS</button>
+            <button type="button" value="FIXADO"  name="btn2"  id="btnFixado"  >FIXADO</button>  
     </div>                                 
             <p>Aporte Mensal</p>
             <input type="text"  onKeyUp="mascaraMoeda(this, event)" name= "aporteMes" id="aporteMes" value=""/>              
@@ -71,7 +71,9 @@
                 </div>
                 <div class="box">
                     <div class="caixaTexto">Alíquota do IR</div>
-                    <span id="aliquotaIr"></span>
+                    <span id="aliquotaIr">
+                        <span id="ir">aqui</span>
+                    </span>
                 </div>
                 <div class="box">
                     <div class="caixaTexto">Valor Pago em IR</div>
