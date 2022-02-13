@@ -1,13 +1,21 @@
-    function btnLiquido(){
-    document.getElementById("btnLiq").style.background = "orange";
-    document.getElementById("btnBr").style.background = "transparent";
-}
+document.querySelectorAll("button").forEach( function(button) {
+    
+    button.addEventListener("click", function(event) {
+    const el = event.target || event.srcElement;
+    const id = el.id;
+    if(id === 'btnBr'){
+        document.getElementById("btnBr").style.background = "orange";
+        document.getElementById("btnLiq").style.background = "transparent";
+        console.log('Botão Bruto');
+    }if(id === 'btnLiq'){
+        document.getElementById("btnLiq").style.background = "orange";
+        document.getElementById("btnBr").style.background = "transparent";
+        console.log('Botão Líquido');
+    }    
+  });  
+});
 
 
-function btnBruto(){
-    document.getElementById("btnBr").style.background = "orange";
-    document.getElementById("btnLiq").style.background = "transparent";
-}
 
 
 
