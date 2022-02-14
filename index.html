@@ -14,6 +14,8 @@
             <h1>Simulador de Investimentos</h1>           
         </div>                   
     </Header>
+        
+         
 
     <div class="containerPage">
         <div class="simulaTela">
@@ -22,15 +24,17 @@
         <label>
             <form action="">        
     <div class="btns">
-        <button type="button" value="Bruto"      name="btn"  id="btnBr"     >Bruto</button>
-        <button type="button" value="Líquido"     name="btn" id="btnLiq"    >Liquido</button>
+        <input type="button" value="BRUTO"   id="btn01" name="btn" onclick="arrayBotao(id=this.id)"> 
+        <input type="button" value="LÍQUIDO" id="btn02" name="btn" onclick="arrayBotao(id=this.id)">
     </div>    
                                  
         <p>Aporte Inicial</p>
-        <input type="text" size="12" onKeyUp="mascaraMoeda(this, event)" name= "aporte" id="aporte" value=""/>            
+       <input type="text" size="12"  name= "aporte" id="aporte" value=""/>
+          <!--onKeyUp="mascaraMoeda(this, event)"  -->          
         <hr>
         <p>Prazo (em meses)</p>
         <input type="text" pattern="\d*" maxlength="4" name= "prazo" id="prazo"  value=""/>
+        
         <hr>        
         <p>IPCA (ao ano)</p>
         <span id="ipca"></span>
@@ -43,15 +47,16 @@
         <p>Tipos de Indexação</p>
         
     <div class="btns">
-            <button type="button" value="PRÉ"     name="btn2"  id="btnPre"     >PRÉ</button>
-            <button type="button" value="PÓS"     name="btn2"  id="btnPos"     > PÓS</button>
-            <button type="button" value="FIXADO"  name="btn2"  id="btnFixado"  >FIXADO</button>  
+        <input type="button" value="PRÉ"    id="btn03" name="btn2" onclick="arrayBotao1(id=this.id)"> 
+        <input type="button" value="PÓS"    id="btn04" name="btn2" onclick="arrayBotao1(id=this.id)"> 
+        <input type="button" value="FIXADO" id="btn05" name="btn2" onclick="arrayBotao1(id=this.id)">          
     </div>                                 
             <p>Aporte Mensal</p>
-            <input type="text"  onKeyUp="mascaraMoeda(this, event)" name= "aporteMes" id="aporteMes" value=""/>              
+            <input type="text"  name= "aporteMes" id="aporteMes" value=""/>   
+            <!--onKeyUp="mascaraMoeda(this, event)"  -->            
             <hr>
             <p>Rentabilidade</p>
-            <input type="number" name= "rantabilidade" id="rantabilidade" value=""/> 
+            <input type="number" name= "rantabilidade" id="rentabilidade" value=""/> 
             <hr>
             <p>CDI (ao ano)</p>
             <span id="cdi"></span>
@@ -67,35 +72,43 @@
                 <div class="superior">
                 <div class="box">
                     <div class="caixaTexto">Valor Final Bruto</div>
-                    <span id="finalBruto"></span>
+                    <span id="finalBruto">
+                        <span id="finalBr"></span>
+                    </span>
                 </div>
                 <div class="box">
                     <div class="caixaTexto">Alíquota do IR</div>
                     <span id="aliquotaIr">
-                        <span id="ir">aqui</span>
+                        <span id="ir"></span>
                     </span>
                 </div>
                 <div class="box">
                     <div class="caixaTexto">Valor Pago em IR</div>
-                    <span id="valorPago"></span>
+                    <span id="valorPago">
+                        <span id="vlPago"></span>
+                    </span>
                 </div>
             </div>
 
 
             <div class="inferior">
-
-
                 <div class="box">
                     <div class="caixaTexto">Valor Final Líquido</div>
-                    <span id="finalLiquido"></span>
+                    <span id="finalLiquido">
+                        <span id="finalLi"></span>
+                    </span>
                 </div>
                 <div class="box">
                     <div class="caixaTexto">Valor Total Investido</div>
-                    <span id="totalInvestido"></span>
+                    <span id="totalInvestido">
+                        <span id="totalInv"></span>
+                    </span>
                 </div>
                 <div class="box">
                     <div class="caixaTexto">Ganho Líquido</div>
-                    <span id="ganhoLiquido"></span>
+                    <span id="ganhoLiquido">
+                        <span id="ganhoLiq"></span>
+                    </span>
                 </div>
                 </div>
             </div>
@@ -117,7 +130,7 @@
 </div>
    </div>
         <div>          
-           
+     <script src="styled.js"></script>      
    <script src="simulador.js"></script>
    <script src="limpar.js"></script>
    <script src="funcoes.js"></script>

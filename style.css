@@ -79,7 +79,7 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
         
-    #btnBr{  
+    #btn01{  
         background-color: orange; 
         float: left;
         border: none;     
@@ -88,7 +88,7 @@ input[type="number"] {
         width: 85px;
         height: 30px;        
     }
-    #btnLiq{
+    #btn02{
                
             border: 1px solid black;
             border-radius: 0px 5px 5px 0px;
@@ -116,7 +116,7 @@ input[type="number"] {
     display: flex;
     width: 100%;
 }
-#btnPre{
+#btn03{
     background-color: orange; 
     float: left;
     border: none;     
@@ -125,14 +125,14 @@ input[type="number"] {
     width: 68px;
     height: 30px;
 }
-#btnPos{
+#btn04{
     float: left;
     border: none;     
     border: 1px solid black;
     width: 68px;
     height: 30px;
 }
-#btnFixado{
+#btn05{
     float: left;
     border: none;     
     border: 1px solid black;
@@ -152,6 +152,7 @@ input[type="number"] {
     display: flex;
 }
 .box{
+    background-color: #fff;
     font-size: 14px;
     font-weight: bold;
     display: flex;
@@ -165,14 +166,19 @@ input[type="number"] {
 .caixaTexto{
     margin-top: 4px;
 }
-#ir{
+#ir, #finalBr, #valorPago, #totalInv  {
     display: flex;
     justify-content: center;
 }
+#finalLi, #ganhoLiq {
+    display: flex;
+    justify-content: center;
+    color: rgb(9, 119, 37);
+}
+
 
 #finalBruto, #aliquotaIr, #valorPago, #finalLiquido, #totalInvestido, #ganhoLiquido{
     margin-top: 10px;
-    background-color: aquamarine;
     width: 100px;
     height: 20px;
 }
