@@ -18,10 +18,9 @@ function arrayBotao1(id){
  arrayA.push(id);
 }
 
-function simular(){
-
-    document.getElementById("btnSimular").style.background = "orange";  
-    
+function simular(){     
+    document.getElementById('resultado').style.visibility = 'visible'
+    document.getElementById("btnSimular").style.background = "orange";      
     
     var input = document.getElementById('aporte').value;
     var aporte = parseInt(input);   
