@@ -22,24 +22,31 @@ function simular(){
     document.getElementById('resultado').style.visibility = 'visible'
     document.getElementById("btnSimular").style.background = "orange";      
     
-    var input = document.getElementById('aporte').value;
-    var aporte = parseInt(input);   
+    let inputA = document.getElementById('aporte').value;
+    let cleanAporte = inputA.replace(/[^0-9,]*/g, '').replace(',', '.');
+    let valorAporte = parseFloat(cleanAporte);
 
-    var input = document.getElementById('prazo').value;
-    var prazoMes = parseInt(input);
+  //  var input = document.getElementById('prazo').value;
+   // var prazoMes = parseInt(input);
 
-    var input = document.getElementById('aporteMes').value;
-    var aporteMensal = parseInt(input);
+   let inputB = document.getElementById('aporteMes').value;
+   let cleanAporteMes = inputB.replace(/[^0-9,]*/g, '').replace(',', '.');
+   let valorAporteMes = parseFloat(cleanAporteMes);
+
+  //  var input = document.getElementById('aporteMes').value;
+    //var aporteMensal = parseInt(input);
 
     // var renta = document.getElementById('rentabilidade') 
 
-    var totalInvestido = aporte + (prazoMes*aporteMensal)
+    //var totalInvestido = aporte + (prazoMes*aporteMensal)
 
-    console.log(aporte);
-    console.log(prazoMes);
-    console.log(aporteMensal);
+    
+    console.log(valorAporte * 2);
+    console.log(valorAporteMes *2);
+   // console.log(prazoMes);
+  //  console.log(aporteMensal);
 
-    console.log(totalInvestido);
+   // console.log(totalInvestido);
    
           
 

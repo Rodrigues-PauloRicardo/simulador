@@ -14,8 +14,6 @@
             <h1>Simulador de Investimentos</h1>           
         </div>                   
     </Header>
-        
-         
 
     <div class="containerPage">
         <div class="telasIniciais">
@@ -23,15 +21,15 @@
         <div class="title">Simulador</div>           
         <p>Rendimento</p>
         <label>
-            <form action="">        
+            <form action="" autocomplete="off">        
     <div class="btns">
         <input type="button" value="BRUTO"   id="btn01" name="btn" onclick="arrayBotao(id=this.id)"> 
         <input type="button" value="LÍQUIDO" id="btn02" name="btn" onclick="arrayBotao(id=this.id)">
     </div>    
                                  
         <p>Aporte Inicial</p>
-       <input type="text" size="12"  name= "aporte" id="aporte" value=""/>
-          <!--onKeyUp="mascaraMoeda(this, event)"  -->          
+       <input type="text" size="12" onInput="mascaraMoeda(event)" name= "aporte" id="aporte" value=""/>
+          <!-- -->          
         <hr>
         <p>Prazo (em meses)</p>
         <input type="text" pattern="\d*" maxlength="4" name= "prazo" id="prazo"  value=""/>
@@ -53,7 +51,7 @@
         <input type="button" value="FIXADO" id="btn05" name="btn2" onclick="arrayBotao1(id=this.id)">          
     </div>                                 
             <p>Aporte Mensal</p>
-            <input type="text"  name= "aporteMes" id="aporteMes" value=""/>   
+            <input type="text" onInput="mascaraMoeda(event)" name= "aporteMes" id="aporteMes" value=""/>   
             <!--onKeyUp="mascaraMoeda(this, event)"  -->            
             <hr>
             <p>Rentabilidade</p>
@@ -118,13 +116,10 @@
                 <div class="projecao">
                     Projeção de Valores
                 </div>
-
-
-            
+           
                 <div class="boxGrafico"> 
                   
-                    <div class="valor">Valor(R$)</div>  
-                               
+                    <div class="valor">Valor(R$)</div>                  
                     
                     <div class="grafico"></div>
 
@@ -132,7 +127,7 @@
 </div>
    </div>
         <div>          
-     <script src="styled.js"></script>      
+   <script src="styled.js"></script>      
    <script src="simulador.js"></script>
    <script src="limpar.js"></script>
    <script src="funcoes.js"></script>
