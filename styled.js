@@ -56,5 +56,7 @@
         btn5.style.color= "#ffff";
         btn3.style.color= "black";
         btn4.style.color= "black";
+        setaPre.style.color= "transparent";
+        setaPos.style.color= "transparent";
         });
        
