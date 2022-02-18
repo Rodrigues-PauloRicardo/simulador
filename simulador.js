@@ -3,11 +3,9 @@ fetch (`http://localhost:3000/indicadores`)
     return r.json()
 })
 .then(corpo => {
-    document.getElementById('ipca').innerHTML=corpo[0].valor+'%';
-    document.getElementById('cdi').innerHTML=corpo[1].valor+'%';     
+    document.getElementById('ipca').innerHTML=corpo[1].valor+'%';
+    document.getElementById('cdi').innerHTML=corpo[0].valor+'%';     
 })
-
-
       
 array = ['0'];    
 function arrayBotao(id){
@@ -20,7 +18,7 @@ function arrayBotao1(id){
 
 function simular(){     
     document.getElementById('resultado').style.visibility = 'visible'
-    document.getElementById("btnSimular").style.background = "orange";      
+    document.getElementById("btnSimular").style.background = "#FF8631"; 
     
     let inputAporte = document.getElementById('aporte').value;
     let cleanAporte = inputAporte.replace(/[^0-9,]*/g, '').replace(',', '.');
@@ -31,23 +29,15 @@ function simular(){
     let valorAporteMes = parseFloat(cleanAporteMes);
 
     var inputPrazo = document.getElementById('prazo').value;
-    var prazo = parseInt(inputPrazo);
-
-  
-    // var renta = document.getElementById('rentabilidade') 
-
-    var totalInvestido = valorAporte + (prazo*valorAporteMes)
-    
    
 
-    
-    console.log(valorAporte * 2);
-    console.log(valorAporteMes *2);
-    console.log(prazo);
-    console.log(totalInvestido);         
-
-
-
+    if(inputPrazo === ''){
+        document.getElementById("hrAviso").style.background = 'red';
+        document.getElementById("prazoMes").style.color = 'red';  
+        document.getElementById("msgAviso").style.visibility = 'visible'
+    }if(inputPrazo !==''){
+   
+      
 
 
 
@@ -66,6 +56,7 @@ function simular(){
     escolha2 = ultimoA;    
     }); 
 
+    
     if(escolha1 ==='0' && escolha2==='0' || escolha1 ==='1' && escolha2 === '3'){
         document.getElementById('finalBr').innerHTML =     ('R$ ' + (body[0].valorFinalBruto));
         document.getElementById('ir').innerHTML =          (body[0].aliquotaIR + ' %');
@@ -127,3 +118,5 @@ function simular(){
         }      
 });
 }
+}
+
