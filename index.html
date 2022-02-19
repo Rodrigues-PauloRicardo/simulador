@@ -14,7 +14,6 @@
             <h1>Simulador de Investimentos</h1>           
         </div>                   
     </Header>
-
     <div class="containerPage">
         <div class="telasIniciais">
         <div class="simulaTela">
@@ -28,23 +27,19 @@
     <div class="btns">
         <input type="button" value="Bruto"  id="btn01" name="btn" onclick="arrayBotao(id=this.id)"><div id="setaBruto" >✔</div>
         <input type="button" value="Líquido" id="btn02" name="btn" onclick="arrayBotao(id=this.id)"><div id="setaLiquido" >✔</div>
-    </div>    
-                                 
+    </div>   
         <p>Aporte Inicial</p>
        <input type="text" size="12" onInput="mascaraMoeda(event)" name= "aporte" id="aporte" value=""/>
           <!-- -->          
         <hr>
         <p id="prazoMes">Prazo (em meses)</p>
         <input type="text" pattern="\d* "maxlength="4" name= "prazo" id="prazo"  value=""/>
-       
-        
         <hr id="hrAviso">
         <p id="msgAviso">Campo Obrigatório</p>        
         <p id="ipcaTitle">IPCA (ao ano)</p>
         <span id="ipca"></span>
         <hr>             
         <input type="button" value="Limpar campos" class="limpar" onclick="limpar()" >   
-      
     </div>
     <div class="simular">
         <div class="title">.</div> 
@@ -57,7 +52,7 @@
         <input type="button" value="Pós"    id="btn04" name="btn2" onclick="arrayBotao1(id=this.id)"> <div id="setaPos" >✔</div>
         <input type="button" value="Fixado" id="btn05" name="btn2" onclick="arrayBotao1(id=this.id)">         
     </div>                                 
-            <p>Aporte Mensal </p>
+            <p id="aporteMensal">Aporte Mensal </p>
             <input type="text" onInput="mascaraMoeda(event)" name= "aporteMes" id="aporteMes" value=""/>   
             <hr>
             <p>Rentabilidade</p>
@@ -66,13 +61,11 @@
             <p>CDI (ao ano)</p>
             <span id="cdi"></span>
             <hr>
-            <input type="button" value="Simular" id="btnSimular" onclick="simular()" > 
-            
+            <input type="button" value="Simular" id="btnSimular" onclick="simular()" >             
             <form>        
     </div>
 </div>
-    <div id="resultado" >       
-
+    <div id="resultado" >      
             <div class="title">Resultado da Simulação</div>
             <div class= "boxGeral">
                 <div class="superior">
@@ -95,8 +88,6 @@
                     </span>
                 </div>
             </div>
-
-
             <div class="inferior">
                 <div class="box">
                     <div class="caixaTexto">Valor Final Líquido</div>
@@ -117,33 +108,21 @@
                     </span>
                 </div>
                 </div>
-            </div>
-            
+            </div>            
                 <div class="projecao">
                     Projeção de Valores
-                </div>
-           
-                <div class="boxGrafico"> 
-                  
-                    <div class="valor">Valor(R$)</div>                  
-                    
+                </div>           
+                <div class="boxGrafico">                   
+                    <div class="valor">Valor(R$)</div>                
                     <div class="grafico">
                         <canvas id="myChart" width="400" height="80"></canvas>
                     </div>
-
-
 </div>
    </div>
         <div>  
-        
-   <script src="styled.js"></script>      
-   <script src="simulador.js"></script>
-   <script src="limpar.js"></script>
-   <script src="funcoes.js"></script>
-   <script src="mascaraMoeda.js"></script>
-
-    
+   <script src="simulador.js"></script>        
+   <script src="styled.js"></script>     
+   <script src="mascaraMoeda.js"></script>  
+   <script src="limpar.js"></script>  
 </body>
-
-
 </html>

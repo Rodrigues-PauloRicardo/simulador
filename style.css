@@ -5,14 +5,10 @@
     text-decoration: none;
     font-family: sans-serif;
 }
-
-
-body {
-    
+body {    
     background-color: rgb(243, 243, 243);
     margin: 0;
-    padding: 15px;
-    
+    padding: 15px;    
 }   
     header{
         height: 60px;
@@ -37,12 +33,9 @@ body {
         .title{
         display: flex;
         justify-content: center;
-        font-size: 1rem;
-        
-        
+        font-size: 1rem;       
         }
     }
-
     .rendimento{
         display: flex;
         justify-content: space-between;
@@ -54,8 +47,7 @@ body {
     }
     img{
         height: 17px;
-        margin-top: 25px;
-        
+        margin-top: 25px;        
     }
     hr{
         width: 80%;
@@ -103,8 +95,7 @@ body {
             width: 100%;
             margin: 0; 
         }
-    }
-       
+    }       
     .simular{
         margin: 0px 0px 0px 10px;        
         overflow: auto;
@@ -128,9 +119,7 @@ body {
             width: 360px;
             margin-left: 0;             
         }
-    }
- 
-    
+    }    
     input{  
         margin-top: 15px;
         border: none;
@@ -145,8 +134,7 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
 
-}
-        
+}        
     #btn01{  
         font-size: .8rem;
         background-color: #FF8631; 
@@ -278,6 +266,7 @@ input[type="number"] {
     color: red;
     margin-top: 1px;
 }
+
 #ipcaTitle{
     margin-top: 10px;
 }
@@ -291,8 +280,6 @@ input[type="number"] {
     justify-content: center;
     color: rgb(9, 119, 37);
 }
-
-
 #finalBruto, #aliquotaIr, #valorPago, #finalLiquido, #totalInvestido, #ganhoLiquido{
     margin-top: 10px;
     width: 100px;
@@ -359,22 +346,3 @@ input[type="number"] {
     margin-left: 57px;
     color: transparent;
 }
-
-
-
-
-/*-div class="container">
-<p>Esta div não será exibida</p>  
-</!div>
-<input type="button" value="hfjkhhjkhgrjkghl" onclick="batata()">
-<style>
-.container {
-display: none;
-}
-</style>
-<script>
-function batata(){
-  var container = document.querySelector('.container');
-  container.style.display = 'block'
-}    
-</script>*/
