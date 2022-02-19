@@ -19,6 +19,7 @@ function arrayBotao1(id) {
 function simular() {
   document.getElementById("resultado").style.visibility = "visible";
   document.getElementById("btnSimular").style.background = "#FF8631";
+  document.getElementById("rentabilidade").style.color = "black";
 
 
   let inputPrazo = document.getElementById("prazo").value;
