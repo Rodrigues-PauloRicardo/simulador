@@ -301,6 +301,7 @@ input[type="number"] {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+
 }
 @media screen and (max-width:500px) {
     .boxGrafico{
@@ -310,8 +311,9 @@ input[type="number"] {
 .grafico{
     width: 100%;
     height: 130px;
-    background-color: aquamarine;
-    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 3px solid rgb(146, 143, 150);
 }
 .valor{
     margin-left: 0;
