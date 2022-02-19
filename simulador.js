@@ -25,23 +25,29 @@ function simular() {
   let inputPrazo = document.getElementById("prazo").value;
   let cleanPrazo = inputPrazo.replace(/[^0-9,]*/g, "").replace(",", ".");
   let newPrazo = parseFloat(cleanPrazo);
-  
-
   let campoAporteMensal = document.getElementById('aporteMes').value;
-  if(campoAporteMensal === ""){
-    document.getElementById('hrAvisos').style.borderColor = 'red';
-    document.getElementById("aporteMensal").style.color = "red";
-  }if(campoAporteMensal !== ""){
-    document.getElementById("aporteMensal").style.color = "black";
-  }
+  let cleanAporteMensal = inputPrazo.replace(/[^0-9,]*/g, "").replace(",", ".");
+
+
+ 
+ 
   if (inputPrazo === "") {
     document.getElementById('hrAviso').style.borderColor = 'red';
     document.getElementById("prazoMes").style.color = "red";
     document.getElementById("msgAviso").style.visibility = "visible";
   }
   if (inputPrazo !== "") {
+    document.getElementById('hrAviso').style.borderColor = 'Black';
     document.getElementById("prazoMes").style.color = "black";
     document.getElementById("msgAviso").style.visibility = "hidden";
+  }
+    
+  if(campoAporteMensal === ""){
+    document.getElementById('hrAvisos').style.Color = 'red';
+    document.getElementById("aporteMensal").style.color = "red";
+  }if(campoAporteMensal !== ""){
+    document.getElementById('hrAvisos').style.Color = 'black';
+    document.getElementById("aporteMensal").style.color = "black";
 
     fetch(`http://localhost:3000/simulacoes`)
       .then((res) => {
