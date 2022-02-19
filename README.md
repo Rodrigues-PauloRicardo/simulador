@@ -17,6 +17,10 @@ Tabela de conteúdos
 
 [![Netlify Status]()
 
+<br>
+<img src=https://github.com/Rodrigues-PauloRicardo/simulador/captura.png>
+<br>
+
 
 Requisitos:
 * NodeJS
