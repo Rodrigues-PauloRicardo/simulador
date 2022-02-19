@@ -18,7 +18,7 @@ Tabela de conteúdos
 [![Netlify Status]()
 
 <br>
-<img src=https://github.com/Rodrigues-PauloRicardo/simulador/captura.png>
+<img src=https://github.com/Rodrigues-PauloRicardo/simulador/blob/main/captura.png>
 <br>
 
 
