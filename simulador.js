@@ -28,11 +28,13 @@ function simular() {
 
   let campoAporteMensal = document.getElementById('aporteMes').value;
   if(campoAporteMensal === ""){
+    document.getElementById('hrAvisos').style.borderColor = 'red';
     document.getElementById("aporteMensal").style.color = "red";
   }if(campoAporteMensal !== ""){
     document.getElementById("aporteMensal").style.color = "black";
   }
   if (inputPrazo === "") {
+    document.getElementById('hrAviso').style.borderColor = 'red';
     document.getElementById("prazoMes").style.color = "red";
     document.getElementById("msgAviso").style.visibility = "visible";
   }
