@@ -15,10 +15,10 @@ Tabela de conteúdos
    * Tela de resultado de busca de dados da api
  <!--te-->
 
-[![Netlify Status]()
+[![Netlify Status](https://simulador-financ.netlify.app/)
 
 <br>
-<img src=https://github.com/Rodrigues-PauloRicardo/simulador/captura.png>
+<img src=https://github.com/Rodrigues-PauloRicardo/simulador/blob/main/captura.png>
 <br>
 
 
