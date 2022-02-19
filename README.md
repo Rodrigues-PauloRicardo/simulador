@@ -15,7 +15,7 @@ Tabela de conteúdos
    * Tela de resultado de busca de dados da api
  <!--te-->
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/064caac6-8f00-4ebf-a22e-9c6d8a56b9e4/deploy-status)](https://app.netlify.com/sites/simulador-financ/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/064caac6-8f00-4ebf-a22e-9c6d8a56b9e4/deploy-status)](https://app.netlify.com/sites/simulador-financ.netlify.app)
 
 <br>
 <img src=https://github.com/Rodrigues-PauloRicardo/simulador/blob/main/captura.png>
