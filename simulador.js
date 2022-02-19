@@ -37,16 +37,16 @@ function simular() {
     document.getElementById("msgAviso").style.visibility = "visible";
   }
   if (inputPrazo !== "") {
-    document.getElementById('hrAviso').style.borderColor = 'Black';
+    document.getElementById('hrAviso').style.borderColor = '';
     document.getElementById("prazoMes").style.color = "black";
     document.getElementById("msgAviso").style.visibility = "hidden";
   }
     
   if(campoAporteMensal === ""){
-    document.getElementById('hrAvisos').style.Color = 'red';
+    document.getElementById('hrAvisos').style.borderColor = 'red';
     document.getElementById("aporteMensal").style.color = "red";
   }if(campoAporteMensal !== ""){
-    document.getElementById('hrAvisos').style.Color = 'black';
+    document.getElementById('hrAvisos').style.borderColor = '';
     document.getElementById("aporteMensal").style.color = "black";
 
     fetch(`http://localhost:3000/simulacoes`)
