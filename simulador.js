@@ -6,6 +6,7 @@ fetch(`http://localhost:3000/indicadores`)
     document.getElementById("ipca").innerHTML = corpo[1].valor + "%";
     document.getElementById("cdi").innerHTML = corpo[0].valor + "%";
   });
+  
 
 array = ["0"];
 function arrayBotao(id) {
