@@ -5,7 +5,7 @@
 <h2>🚧 Status:  🚀 Em construção...  🚧.</h2>
 
 ### 🛠 Tecnologias
-HTML, CSS e Javascript
+HTML, CSS, Javascript NodeJs
  
 Tabela de conteúdos
 =================
